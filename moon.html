@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>moon</title>
+	<style type="text/css">
+	.background{
+		background:#022436 url('img/e_stars.png') repeat 20% 20%;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		animation: bg 600s infinite linear;
+	}
+	@keyframes bg{
+		from{background-position:5% 600%;}
+		to{background-position:1300% 5%;}
+	}
+	.xx{
+		background: url('img/smallstars.png') repeat ;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		animation: xx 3s infinite linear alternate;
+	}
+	@keyframes xx{
+		0%{opacity:0.1;}
+		25%{opacity:0.35;}
+		50%{opacity:0.9;}
+		100%{opacity:0.2;}
+	}
+	.moon{
+		background: url('img/e_moon2.png') no-repeat 5% 30%;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		-webkit-animation-timing-function: moon 400s infinite linear;
+		-o-animation-timing-function: moon 400s infinite linear;
+		animation-timing-function: moon 400s infinite linear;
+	}
+	@-webkit-keyframes moon{
+		from{background-position:0% 2%;}
+		to{background-position:110% 2%;}
+	}
+	@keyframes moon{
+		from{background-position:0% 2%;}
+		to{background-position:110% 2%;}
+	}
+	</style>
+</head>
+<body>
+	<div class="background">
+		<div class="xx"></div>
+		<div class="moon"></div>
+	</div>
+</body>
+</html>

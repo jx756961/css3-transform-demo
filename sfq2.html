@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		background-color: #ccc;
+	}
+	.show{
+		width: 805px;
+		height: 320px;
+		overflow: hidden;
+		margin: 80px auto;
+		box-shadow: 0 0 10px 2px rgba(0, 0, 0, .4)
+	}
+	.show ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 3000px;
+		overflow: hidden;
+		transition: all 0.5s;
+	}
+	.show ul li{
+		float: left;
+		width: 160px;
+		border-left: 1px solid #aaa;
+		box-shadow: 0 0 25px 10px rgba(0, 0, 0, .4);
+		position: relative;
+		transition: all 0.5s;
+	}
+	.show ul li > a{
+		display: block;
+	}
+	.show ul li > div{
+		width: 640px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.show ul li > div a{
+		display: block;
+		padding: 20px;
+		font-size: 14px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.show ul:hover li{
+		width: 40px;
+	}
+	.show ul li:hover{
+		width: 640px;
+	}
+	</style>
+</head>
+<body>
+	<div class="show">
+		<ul>
+			<li>
+				<a href=""><img src="images/1.jpg" alt=""></a>
+				<div><a href="">Keep smile .frist</a></div>
+			</li>
+			<li>
+				<a href=""><img src="images/2.jpg" alt=""></a>
+				<div><a href="">Keep smile .frist</a></div>
+			</li>
+			<li>
+				<a href=""><img src="images/3.jpg" alt=""></a>
+				<div><a href="">Keep smile .frist</a></div>
+			</li>
+			<li>
+				<a href=""><img src="images/4.jpg" alt=""></a>
+				<div><a href="">Keep smile .frist</a></div>
+			</li>
+			<li>
+				<a href=""><img src="images/5.jpg" alt=""></a>
+				<div><a href="">Keep smile .frist</a></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
